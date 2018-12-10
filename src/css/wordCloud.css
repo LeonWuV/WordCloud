@@ -69,6 +69,7 @@
 		#WordCloud .head .right .uploadWordButton{
 
 			background: #587aa0;
+			font-size: 13px;
 		}#WordCloud .head .right .uploadWordButton:hover{
 
 			background: #587dd0;

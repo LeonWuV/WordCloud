@@ -122,12 +122,24 @@
 				reader.onload = function(){
 
 					var buffer = this.result.split("\n");
-					var index = -1;
+					var index = 0, len = buffer.length;
 
-					setInterval(function(){
+					window.WordCloud.prototype.add(buffer[index]);
+					var clock = setInterval(function(){
 
-						window.WordCloud.prototype.add(++index),
-					},1000);
+						if(index>=len-1){
+
+							clearInterval(clock);return;
+						}
+
+						var word = $.trim(buffer[index]);
+						if(word!=""){
+
+							window.WordCloud.prototype.add( word );
+						}
+
+						++index;
+					},500);
 
 				};
 			});
