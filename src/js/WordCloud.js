@@ -167,13 +167,15 @@
 
 			$("#WordCloud .body .container .word").removeClass("large").last().css({
 
+				"font-size":this.generateFontSize(),
 				"margin-left": window.WordCloud.prototype.generateLocation("marginLeft"), 
 				"margin-top": window.WordCloud.prototype.generateLocation("marginTop")
 			});
-			$("#WordCloud .body .container .word").last().css({"font-size":this.generateFontSize()});
 			
 			$("#WordCloud .body .container").append(dom).addClass("animate");
+			
 			$("#"+id).css({
+				
 				"font-size": 50,
 				"color": window.WordCloud.prototype.generateColor(),
 				
