@@ -1,8 +1,10 @@
 (function(){
-	
-	window.WordCloud = function(){
+		
+	var config;
 
+	window.WordCloud = function(_config){
 
+		config = _config;
 	};
 
 
@@ -23,7 +25,7 @@
 		eventsRegister: function(){
 
 			this.listenAddWordEvent();
-			this.listenuploadWorsEvent();
+			this.listenUploadWorsEvent();
 		},
 
 		generateId: function(word){
@@ -113,7 +115,7 @@
 
 
 
-		listenuploadWorsEvent: function(){
+		listenUploadWorsEvent: function(){
 
 			$(document).on("change","#FileInputTag",function(){
 
@@ -139,7 +141,7 @@
 						}
 
 						++index;
-					},500);
+					}, config.speed);
 
 				};
 			});

@@ -136,9 +136,9 @@
 
 @keyframes breath{
 
-	0% { font-size: 50px; }
+	0% { font-size: 50px;margin-top: 50px; }
 
-	50% { font-size: 45px; }
+	50% { font-size: 45px;margin-top: 95px; }
 
-	100% { font-size: 50px; }
+	100% { font-size: 50px;margin-top: 130px; }
 }

@@ -1,7 +1,6 @@
 (function(){
 
-
-	var wordCloud = new window.WordCloud();
+	var wordCloud = new window.WordCloud(config);
 	
 	wordCloud.init();
 
