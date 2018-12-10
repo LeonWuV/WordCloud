@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/badge/license-MIT-black.svg">
 </p>
 
-原生JavaScript实现词云特效
+原生JavaScript实现词云特效（Implementing Word Cloud  Special Effects By JavaScript Without Libraries）.
 
 ## ✎ 摘要( Synopsis )
 
