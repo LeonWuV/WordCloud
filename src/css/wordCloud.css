@@ -1,0 +1,92 @@
+#WordCloud{
+
+	width: 700px;
+	margin:30px auto;
+	min-height: 300px;
+	border: 1px solid #ddd;
+}
+
+	#WordCloud .head{
+
+		height: 60px;
+	    border-bottom: 1px solid #ddd;
+	    padding: 15px;
+	}
+
+
+
+		#WordCloud .head .left{
+
+			width: 200px;
+			height: 100%;
+			text-align: left;
+			display: inline-block;
+			float: left;
+		}
+
+		#WordCloud .head .right{
+
+			text-align: right;
+			width: 380px;
+			height: 100%;
+			display: inline-block;
+			float: right;
+		    line-height: 70px;	
+		}
+
+		#WordCloud .head .right .wordInput{
+
+		    padding: 10px;
+		    border: 1px solid #ddd;
+		    border-radius: 5px;
+		}
+
+		#WordCloud .head .right .addWordButton{
+
+			background:#74d058;
+			display: inline-block;
+			width: 100px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			color: #FFF;
+			border-radius: 5px;    
+			margin-left: 10px;
+		}#WordCloud .head .right .addWordButton:hover{
+
+			background: #34d058;
+			cursor: pointer;
+		}
+
+
+	#WordCloud .body{
+
+		height:300px;
+		padding: 15px;
+	}
+
+		#WordCloud .body .container{
+
+		    width: 100%;
+		    background: #000;
+		    height: 100%;
+		}
+
+			#WordCloud .body .container .word{
+
+				position:absolute;
+				color: #FFF;
+				font-size:10px;
+			}
+
+			#WordCloud .body .container .word.large{
+
+				font-size: 16px;
+			}
+
+	#WordCloud .foot{
+
+		height: 20px;
+		padding: 15px;
+		border-top:1px solid #ddd;
+	}
