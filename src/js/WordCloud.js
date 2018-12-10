@@ -23,6 +23,7 @@
 		eventsRegister: function(){
 
 			this.listenAddWordEvent();
+			this.listenuploadWorsEvent();
 		},
 
 		generateId: function(word){
@@ -108,6 +109,28 @@
 				$("#WordCloud .head .right .wordInput").removeAttr("disabled");
 				$("#WordCloud .head .right .addWordButton").removeAttr("disabled");
 			},1000);
+		},
+
+
+
+		listenuploadWorsEvent: function(){
+
+			$(document).on("change","#FileInputTag",function(){
+
+				var reader = new FileReader();
+				reader.readAsText(document.getElementById("FileInputTag").files[0]);
+				reader.onload = function(){
+
+					var buffer = this.result.split("\n");
+					var index = -1;
+
+					setInterval(function(){
+
+						window.WordCloud.prototype.add(++index),
+					},1000);
+
+				};
+			});
 		},
 
 
