@@ -127,7 +127,7 @@
 					window.WordCloud.prototype.add(buffer[index]);
 					var clock = setInterval(function(){
 
-						if(index>=len-1){
+						if(index>=len){
 
 							clearInterval(clock);return;
 						}
