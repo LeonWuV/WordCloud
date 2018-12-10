@@ -57,11 +57,19 @@
 			background: #34d058;
 			cursor: pointer;
 		}
+		#WordCloud .head .right .addWordButton:disabled{
+
+			background: grey;
+		}#WordCloud .head .right .addWordButton:disabled:hover{
+
+			cursor: not-allowed;
+			background: grey;
+		}
 
 
 	#WordCloud .body{
 
-		height:300px;
+		height:400px;
 		padding: 15px;
 	}
 
@@ -70,18 +78,27 @@
 		    width: 100%;
 		    background: #000;
 		    height: 100%;
+	        overflow: hidden;
 		}
 
 			#WordCloud .body .container .word{
 
 				position:absolute;
 				color: #FFF;
-				font-size:10px;
+				margin:10px;
+				animation: myRotate 8s infinite;
 			}
 
 			#WordCloud .body .container .word.large{
 
-				font-size: 16px;
+		        z-index: 2;
+			    position: absolute;
+			    display: inline-block;
+			    background: rgba(0,0,0,0.6);
+			    text-align: center;
+			    margin-top: 130px;
+			    width: 650px;
+			    animation: breath 5s infinite;
 			}
 
 	#WordCloud .foot{
@@ -90,3 +107,28 @@
 		padding: 15px;
 		border-top:1px solid #ddd;
 	}
+
+
+
+.animate {
+
+	animation: myRotate 3s;
+}
+
+@keyframes myRotate{
+
+	0% {transform:rotateY(0deg) }
+
+	50% {transform:rotateY(360deg) }
+
+	100% {transform:rotateY(-360deg) }
+}
+
+@keyframes breath{
+
+	0% { font-size: 50px; }
+
+	50% { font-size: 45px; }
+
+	100% { font-size: 50px; }
+}
