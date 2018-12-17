@@ -185,7 +185,11 @@
 				// 这两行不能删除
 				"margin-left":0,
 				"margin-top":130,
-			}).addClass("large");		
+			}).addClass("large");
+			setTimeout(function(){
+				$("#"+id).removeClass("large");
+			},5000);
+					
 				
 			setTimeout(function(){
 
